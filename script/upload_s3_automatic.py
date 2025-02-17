@@ -28,7 +28,6 @@ def upload_file_s3(file_path, bucket, s3_key):
   else:
     print(f"El archivo ya existe en s3")
 
-
 class FileHandler(FileSystemEventHandler):
   
   def on_created(self, event):
